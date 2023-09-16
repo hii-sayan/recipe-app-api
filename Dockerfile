@@ -1,7 +1,7 @@
 FROM python:3.9-alpine3.13
 LABEL maintainer="sayan"
 
-ENV PYTHONBUFFERED 1
+ENV PYTHONUBUFFERED 1
 
 COPY ./requirements.txt /tmp/requirements.txt
 COPY ./requirements.dev.txt /tmp/requirements.dev.txt
