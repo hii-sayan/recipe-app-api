@@ -12,3 +12,4 @@ class CalcTests(SimpleTestCase):
         res = calc.add(6,6)
 
         self.assertEqual(res, 12)
+        
