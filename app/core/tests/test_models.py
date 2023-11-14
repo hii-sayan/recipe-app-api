@@ -23,7 +23,7 @@ class ModelTest(TestCase):
         self.assertEqual(user.email, email)
         self.assertTrue(user.check_password(password))
 
-    def test_new_email_normalized(self):
+    def test_new_user_email_normalized(self):
         """Test user is normalized for new users."""
         sample_emails = [
             ['test1@EXAMPLE.com', 'test1@example.com'],
@@ -59,7 +59,7 @@ class ModelTest(TestCase):
         recipe = models.Recipe.objects.create(
             user=user,
             title='sameple recipe name',
-            time_minute=5,
+            time_minutes=5,
             price=Decimal('6.5'),
             description='sameple rec desc',
         )
